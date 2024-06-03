@@ -22,7 +22,6 @@ task :download do
   dl_url = asset['browser_download_url']
 
   puts "Fetching #{dl_url}"
-  exit 0
   FileUtils.rm_r EDITOR_PATH
   FileUtils.mkdir_p EDITOR_PATH
 
